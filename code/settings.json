@@ -1,0 +1,7 @@
+{
+    "window.zoomLevel": -2,
+    "editor.cursorBlinking": "smooth",
+    "editor.formatOnSave": true,
+    "diffEditor.codeLens": true,
+    "editor.minimap.renderCharacters": false
+}
