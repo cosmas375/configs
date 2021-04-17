@@ -2,6 +2,18 @@
     "window.zoomLevel": -2,
     "editor.cursorBlinking": "smooth",
     "editor.formatOnSave": true,
+    "editor.minimap.renderCharacters": false,
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
+    "settingsSync.keybindingsPerPlatform": false,
     "diffEditor.codeLens": true,
-    "editor.minimap.renderCharacters": false
+    "files.insertFinalNewline": true,
+    "workbench.startupEditor": "none",
+    "workbench.sideBar.location": "right",
+    "workbench.editor.highlightModifiedTabs": true,
+    "workbench.editor.tabSizing": "shrink",
+    "window.autoDetectHighContrast": false,
+    "explorer.confirmDragAndDrop": false,
+    "search.searchOnType": false,
+    "update.mode": "manual"
 }
