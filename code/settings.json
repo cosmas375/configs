@@ -2,6 +2,12 @@
     "window.zoomLevel": -2,
     "editor.cursorBlinking": "smooth",
     "editor.formatOnSave": true,
+    "[vue]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
     "editor.minimap.renderCharacters": false,
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
@@ -15,5 +21,14 @@
     "window.autoDetectHighContrast": false,
     "explorer.confirmDragAndDrop": false,
     "search.searchOnType": false,
-    "update.mode": "manual"
+    "update.mode": "manual",
+    "prettier.requireConfig": true,
+    "prettier.trailingComma": "none",
+    "editor.tabSize": 2,
+    "editor.autoClosingDelete": "always",
+    "[nginx]": {
+        "editor.defaultFormatter": "raynigon.nginx-formatter"
+    },
+    "liveServer.settings.multiRootWorkspaceName": "",
+    "liveServer.settings.root": "/dist"
 }

@@ -13,7 +13,7 @@
         "command": "-workbench.action.quit"
     },
     {
-        "key": "ctrl+t ctrl+t",
+        "key": "ctrl+t",
         "command": "workbench.action.terminal.focus"
     },
     {
@@ -27,7 +27,7 @@
         "when": "terminalFocus && terminalProcessSupported"
     },
     {
-        "key": "ctrl+t ctrl+q",
+        "key": "ctrl+w",
         "command": "workbench.action.terminal.kill",
         "when": "terminalFocus && terminalProcessSupported"
     },
@@ -74,5 +74,27 @@
     {
         "key": "ctrl+shift+g",
         "command": "workbench.scm.focus"
+    },
+    {
+        "key": "ctrl+w",
+        "command": "-workbench.action.closeWindow",
+        "when": "!editorIsOpen && !multipleEditorGroups"
+    },
+    {
+        "key": "ctrl+t",
+        "command": "-workbench.action.showAllSymbols"
+    },
+    {
+        "key": "ctrl+e",
+        "command": "workbench.action.focusActiveEditorGroup"
+    },
+    {
+        "key": "ctrl+e",
+        "command": "-workbench.action.quickOpen"
+    },
+    {
+        "key": "ctrl+e",
+        "command": "-workbench.action.quickOpenNavigateNextInFilePicker",
+        "when": "inFilesPicker && inQuickOpen"
     }
 ]
