@@ -1,0 +1,10 @@
+[alias]
+	co = checkout
+	ps = push
+	st = status
+	l = log
+	rb = rebase
+	pl = pull
+	d = diff
+	a = add
+	ci = commit
