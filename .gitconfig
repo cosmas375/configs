@@ -1,3 +1,6 @@
+[user]
+	name = 'Roman Lyakhovchik'
+	email = 'roman.lyakhovchik@gmail.com'
 [alias]
 	co = checkout
 	ps = push
@@ -7,4 +10,6 @@
 	pl = pull
 	d = diff
 	a = add
-	ci = commit
+	cm = commit
+    rst = reset
+    cp = cherry-pick
