@@ -1,4 +1,5 @@
 syntax on
+set hidden
 set noerrorbells
 set tabstop=4 softtabstop=4
 set shiftwidth=4
@@ -8,28 +9,26 @@ set nu
 set number
 set relativenumber
 set nowrap
-set smartcase
 set noswapfile
 set nobackup
 set undodir=~/.vim/undodir
 set undofile
+set nohlsearch
 set incsearch
 set exrc
 set secure
+set scrolloff=8
 
+set signcolumn=yes
 set colorcolumn=80
 highlight ColorColumn ctermbg=0 guibg=lightgrey
 
+call plug#begin()
 
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+Plug 'morhetz/gruvbox'
+Plug 'ycm-core/YouCompleteMe'
 
-Plugin 'morhetz/gruvbox'
-Plugin 'ycm-core/YouCompleteMe'
-Plugin 'mbbill/undotree'
-
-call vundle#end()
-
+call plug#end()
 
 colorscheme gruvbox
 set background=dark
@@ -39,10 +38,13 @@ nnoremap <leader>h :wincmd h<CR>
 nnoremap <leader>j :wincmd j<CR>
 nnoremap <leader>k :wincmd k<CR>
 nnoremap <leader>l :wincmd l<CR>
-nnoremap <leader>u :UndotreeShow<CR>
 nnoremap <leader>pv :wincmd v<bar> :Ex <bar> :vertical resize 30<CR>
 nnoremap <silent> <leader>+ :vertical resize +5<CR>
 nnoremap <silent> <leader>- :vertical resize -5<CR>
 
 vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '>-2<CR>gv=gv
+
+filetype on
+filetype plugin on
+filetype indent on
