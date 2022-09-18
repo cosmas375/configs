@@ -30,7 +30,7 @@
         "when": "terminalFindVisible && terminalFocus && terminalProcessSupported"
     },
     {
-        "key": "ctrl+t ctrl+t",
+        "key": "ctrl+t",
         "command": "workbench.action.terminal.focus"
     },
     {
@@ -229,5 +229,15 @@
     {
         "key": "ctrl+e ctrl+e",
         "command": "workbench.action.focusActiveEditorGroup"
+    },
+    {
+        "key": "ctrl+n",
+        "command": "workbench.action.terminal.new",
+        "when": "terminalFocus && terminalProcessSupported"
+    },
+    {
+        "key": "ctrl+shift+`",
+        "command": "-workbench.action.terminal.new",
+        "when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
     }
 ]
