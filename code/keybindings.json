@@ -227,7 +227,7 @@
         "when": "editorTextFocus"
     },
     {
-        "key": "ctrl+e ctrl+e",
+        "key": "ctrl+e",
         "command": "workbench.action.focusActiveEditorGroup"
     },
     {
@@ -239,5 +239,27 @@
         "key": "ctrl+shift+`",
         "command": "-workbench.action.terminal.new",
         "when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
+    },
+    {
+        "key": "shift+alt+f",
+        "command": "editor.action.formatDocument",
+        "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
+    },
+    {
+        "key": "ctrl+shift+i",
+        "command": "-editor.action.formatDocument",
+        "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
+    },
+    {
+        "key": "ctrl+shift+l l",
+        "command": "lorem-ipsum.line"
+    },
+    {
+        "key": "ctrl+shift+l p",
+        "command": "lorem-ipsum.paragraph"
+    },
+    {
+        "key": "ctrl+shift+l m",
+        "command": "lorem-ipsum.multipleParagraphs"
     }
 ]
