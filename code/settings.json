@@ -29,9 +29,11 @@
   "editor.scrollBeyondLastColumn": 15,
   "gitlens.blame.heatmap.location": "left",
   "explorer.confirmDragAndDrop": false,
-
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "editor.autoClosingBrackets": "always",
@@ -46,5 +48,6 @@
   "editor.autoClosingDelete": "always",
   "editor.autoClosingOvertype": "always",
   "editor.tabSize": 2,
-  "search.searchOnType": false
+  "search.searchOnType": false,
+  "importSorter.generalConfiguration.sortOnBeforeSave": true
 }
