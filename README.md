@@ -6,4 +6,7 @@ export GTK_IM_MODULE="xim"
 
 alias g='git'
 
-ln -s /<path-to-executable> /usr/bin/<application-name>
+
+------  add app to dmenu  ------
+
+ln -s /path-to-executable /usr/bin/application-name
