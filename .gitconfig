@@ -1,6 +1,5 @@
 [user]
 	name = 'Roman Lyakhovchik'
-	email = 'roman.lyakhovchik@gmail.com'
 [alias]
 	co = checkout
 	ps = push
