@@ -1,5 +1,4 @@
-[user]
-	name = 'Roman Lyakhovchik'
+
 [alias]
 	co = checkout
 	ps = push
@@ -10,5 +9,6 @@
 	d = diff
 	a = add
 	cm = commit
-    rst = reset
-    cp = cherry-pick
+	rst = reset
+	cp = cherry-pick
+	f = fetch
