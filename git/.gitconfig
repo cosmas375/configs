@@ -1,0 +1,18 @@
+[user]
+    name = 'Roman Lyakhovchik'
+    email = 'roman.lyakhovchik@gmail.com'
+[alias]
+    co = checkout
+    ps = push
+    st = status
+    l = log
+    rb = rebase
+    pl = pull
+    d = diff
+    a = add
+    cm = commit
+    rst = reset
+    cp = cherry-pick
+    f = fetch
+[core]
+    editor = nvim

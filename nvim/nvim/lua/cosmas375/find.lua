@@ -14,4 +14,4 @@ vim.opt.wildoptions = "fuzzy,pum"
 vim.keymap.set("n", "<C-p>", [[:find ]])
 vim.keymap.set("n", "J", vim.cmd.bp)
 vim.keymap.set("n", "K", vim.cmd.bn)
-vim.keymap.set("n", "<C-w>", function() vim.cmd("bp") pcall(function() vim.cmd("bd #") end) end)
+vim.keymap.set("n", "x", function() vim.cmd("bp") pcall(function() vim.cmd("bd #") end) end)
