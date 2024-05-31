@@ -8,6 +8,9 @@ formatter.setup {
         typescript = {
             require("formatter.filetypes.typescript").prettier,
         },
+        vue = {
+            require("formatter.filetypes.vue").prettier,
+        },
         c = { -- clang-format
             require("formatter.filetypes.c").clangformat,
         },

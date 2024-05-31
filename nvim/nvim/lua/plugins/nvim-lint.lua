@@ -25,6 +25,7 @@ lint.linters.oclint = {
 lint.linters_by_ft = {
     javascript = {'eslint'},
     typescript = {'eslint'},
+    vue = {'eslint'},
     c = {
         'oclint',
         'clangtidy',
