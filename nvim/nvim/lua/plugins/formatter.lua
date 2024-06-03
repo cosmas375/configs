@@ -8,6 +8,12 @@ formatter.setup {
         typescript = {
             require("formatter.filetypes.typescript").prettier,
         },
+        javascript = {
+            require("formatter.filetypes.javascript").prettier,
+        },
+        json = {
+            require("formatter.filetypes.json").prettier,
+        },
         vue = {
             require("formatter.filetypes.vue").prettier,
         },
