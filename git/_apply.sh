@@ -1,1 +1,1 @@
-cp ./gitconfig ~/.gitconfig
+cp ./.gitconfig ~/.gitconfig
