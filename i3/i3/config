@@ -37,11 +37,16 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nm-applet
 
 # Use pactl to adjust volume in PulseAudio.
-set $refresh_i3status killall -SIGUSR1 i3status
-bindsym XF86AudioRaiseVolume exec amixer set Master 5%+ && $refresh_i3status
-bindsym XF86AudioLowerVolume exec amixer set Master 5%- && $refresh_i3status
-bindsym XF86AudioMute exec amixer set Master toggle && $refresh_i3status
-bindsym XF86AudioMicMute exec amixer set Capture toggle && $refresh_i3status
+exec --no-startup-id amixer set Master 0%
+bindsym XF86AudioRaiseVolume exec amixer set Master 5%+
+bindsym XF86AudioLowerVolume exec amixer set Master 5%-
+bindsym XF86AudioMute exec amixer set Master toggle
+bindsym XF86AudioMicMute exec amixer set Capture toggle
+
+# Screen brightness
+exec --no-startup-id brightnessctl set 5%
+bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +5%
+bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 5%-
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -89,10 +94,10 @@ bindsym $mod+e layout toggle split
 bindsym $mod+Shift+f floating toggle
 
 # change focus between tiling / floating windows
-bindsym $mod+space focus mode_toggle
+bindsym $mod+Shift+s focus mode_toggle
 
 # focus the parent container
-bindsym $mod+a focus parent
+bindsym $mod+Shift+w focus parent
 
 # focus the child container
 #bindsym $mod+d focus child
