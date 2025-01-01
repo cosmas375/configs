@@ -8,7 +8,7 @@ require('find')
 
 -- plugins
 require('plugins')
-require('plugins/gruvbox')
+require('plugins/colorscheme')
 require('plugins/bufferline')
 require('plugins/nvim-lint')
 require('plugins/formatter')
