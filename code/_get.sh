@@ -1,4 +1,7 @@
-rm -rf ./code/* &&
-cp ~/.config/Code/User/keybindings.json ./code/keybindings.json &&\
-cp ~/.config/Code/User/settings.json ./code/settings.json
-cp ~/.config/Code/User/snippets/vue.json ./code/snippets/vue.json
+if [ -d ~/.config/Code/ ]; then
+    cp -r ~/.config/Code/ ./
+fi
+
+if [ -d ~/.config/code/ ]; then
+    cp -r ~/.config/code/ ./
+fi
