@@ -17,7 +17,7 @@ lint.linters.oclint = {
       ['--'] = '', -- in order to skip compilation database error
   }, -- list of arguments. Can contain functions with zero arguments that will be evaluated once the linter is used.
   stream = nil, -- ('stdout' | 'stderr' | 'both') configure the stream to which the linter outputs the linting result.
-  ignore_exitcode = false, -- set this to true if the linter exits with a code != 0 and that's considered normal.
+  ignore_exitcode = true, -- set this to true if the linter exits with a code != 0 and that's considered normal.
   env = nil, -- custom environment table to use with the external process. Note that this replaces the *entire* environment, it is not additive.
   parser = require('lint.parser').from_pattern(oclint_pattern, oclint_groups, oclint_severity_map, oclint_defaults, oclint_options)
 }
