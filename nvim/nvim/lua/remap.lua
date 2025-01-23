@@ -7,7 +7,7 @@ vim.keymap.set("n", "<C-d>", "<C-d>zz")
 vim.keymap.set("n", "<C-u>", "<C-u>zz")
 
 vim.keymap.set("n", "<C-\\>", function() vim.cmd("vsplit") end)
-vim.keymap.set("n", "<C-/>", function() vim.cmd("split") end)
+vim.keymap.set("n", "<C-S-\\>", function() vim.cmd("split") end)
 vim.keymap.set("n", "<leader>h", function() vim.cmd("wincmd h") end)
 vim.keymap.set("n", "<leader>j", function() vim.cmd("wincmd j") end)
 vim.keymap.set("n", "<leader>k", function() vim.cmd("wincmd k") end)

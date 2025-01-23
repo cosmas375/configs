@@ -8,7 +8,7 @@ require('Comment').setup({
     ---LHS of toggle mappings in NORMAL mode
     toggler = {
         ---Line-comment toggle keymap
-        line = '<leader>cc',
+        line = '<C-/>',
         ---Block-comment toggle keymap
         block = '<leader>cb',
     },
@@ -17,7 +17,7 @@ require('Comment').setup({
         ---Line-comment keymap
         line = '<leader>cc',
         ---Block-comment toggle keymap
-        block = '<leader>cb',
+        line = '<C-/>',
     },
     ---LHS of extra mappings
     extra = {
