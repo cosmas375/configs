@@ -5,7 +5,7 @@ vim.call('plug#begin')
 
 Plug 'ellisonleao/gruvbox.nvim'
 
-Plug 'akinsho/bufferline.nvim'
+Plug 'bling/vim-bufferline'
 
 Plug 'neovim/nvim-lspconfig'
 
