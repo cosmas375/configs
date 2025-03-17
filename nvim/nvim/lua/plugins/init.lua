@@ -3,7 +3,7 @@ local Plug = vim.fn['plug#']
 
 vim.call('plug#begin')
 
-Plug 'ellisonleao/gruvbox.nvim'
+Plug 'alexxGmZ/e-ink.nvim'
 
 Plug 'bling/vim-bufferline'
 
