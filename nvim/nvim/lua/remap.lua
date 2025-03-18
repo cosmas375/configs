@@ -21,3 +21,5 @@ vim.keymap.set("n", "x", function() vim.cmd("bp") pcall(function() vim.cmd("bd #
 -- scroll
 vim.keymap.set("n", "<C-j>", "<C-e>")
 vim.keymap.set("n", "<C-k>", "<C-y>")
+
+vim.keymap.set("n", "<C-n>", [[:e %:h/]])
