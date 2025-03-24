@@ -1,2 +1,3 @@
-cp -r ./x/.xinitrc ~ &&\
-cp -r ./x/.Xmodmap ~
+rm ~/.xinitrc && cp ./x/.xinitrc ~/
+rm ~/.Xmodmap && cp ./x/.Xmodmap ~/
+rm ~/.xsession && cp ./x/.xsession ~/
