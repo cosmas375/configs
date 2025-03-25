@@ -14,5 +14,6 @@
     rst = reset
     cp = cherry-pick
     f = fetch
+    b = branch
 [core]
     editor = nvim
