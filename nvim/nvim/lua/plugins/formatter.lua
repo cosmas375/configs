@@ -17,7 +17,10 @@ formatter.setup {
         vue = {
             require("formatter.filetypes.vue").prettier,
         },
-        c = { -- clang-format
+        c = {
+            require("formatter.filetypes.c").clangformat,
+        },
+        cpp = { -- for header files
             require("formatter.filetypes.c").clangformat,
         },
         ["*"] = {
