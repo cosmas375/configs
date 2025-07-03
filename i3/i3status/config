@@ -13,12 +13,10 @@ order += "tztime local"
 
 tztime date {
     format = "%a %d-%m-%Y"
-    timezone = "Europe/Warsaw"
 }
 
 tztime local {
     format = "%H:%M:%S "
-    timezone = "Europe/Warsaw"
 }
 
 volume master {
