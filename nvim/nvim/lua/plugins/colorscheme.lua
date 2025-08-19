@@ -1,4 +1,4 @@
--- quiet
+-- -- quiet
 -- vim.o.background = "dark"
 -- vim.cmd([[colorscheme quiet]])
 

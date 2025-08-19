@@ -14,6 +14,7 @@ require('plugins/nvim-lint')
 require('plugins/formatter')
 require('plugins/nvim-cmp')
 require('plugins/comment')
+require('plugins/nvim-buffer-sorter')
 
 -- lsp
 require('lsp')

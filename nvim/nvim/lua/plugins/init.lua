@@ -5,7 +5,8 @@ vim.call('plug#begin')
 
 Plug 'alexxGmZ/e-ink.nvim'
 
-Plug 'bling/vim-bufferline'
+Plug 'cosmas375/vim-bufferline'
+Plug 'cosmas375/nvim-buffer-sorter'
 
 Plug 'neovim/nvim-lspconfig'
 
