@@ -1,6 +1,7 @@
 require('lsp/html')
 require('lsp/tsserver')
 require('lsp/c')
+require('lsp/vue')
 
 vim.diagnostic.config({
     virtual_text = true,
