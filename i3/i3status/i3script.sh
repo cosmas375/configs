@@ -33,9 +33,9 @@ do
 	data=$(append_data "$data" "$brightness_data")
     fi
 
-    battery_file=/sys/class/power_supply/BAT0/capacity
-    if [ -f $battery_file ]; then
-    	battery=$(cat $battery_file)
+    battery_capacity_file=/sys/class/power_supply/BAT0/capacity
+    if [ -f $battery_capacity_file ]; then
+    	battery=$(cat $battery_capacity_file)
         if [[ $battery -lt 10 ]]
         then
             battery_color='#CA1F34'
@@ -54,9 +54,20 @@ do
         else
             battery_color='#53C296'
         fi
-        battery_data="{ \"full_text\": \"Battery: $battery\", \"color\": \"$battery_color\"}"
 
-	data=$(append_data "$data" "$battery_data")
+        battery_ac_status_file=/sys/class/power_supply/AC/online
+        if [ -f $battery_ac_status_file ]; then
+    	    battery_ac_status=$(cat $battery_ac_status_file)
+            if [[ $battery_ac_status -eq 1 ]]
+            then
+                battery_ac_status='⚡'
+            else
+                battery_ac_status=''
+            fi
+        fi
+
+        battery_data="{ \"full_text\": \"Battery: $battery_ac_status$battery\", \"color\": \"$battery_color\"}"
+        data=$(append_data "$data" "$battery_data")
     fi
 
     if [ ! -z "$data" ]; then
