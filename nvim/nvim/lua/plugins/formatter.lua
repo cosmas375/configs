@@ -17,6 +17,9 @@ formatter.setup {
         vue = {
             require("formatter.filetypes.vue").prettier,
         },
+        typescriptreact = {
+            require("formatter.filetypes.typescript").prettier,
+        },
         c = {
             require("formatter.filetypes.c").clangformat,
         },

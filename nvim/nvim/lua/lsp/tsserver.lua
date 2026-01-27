@@ -6,5 +6,5 @@ require'lspconfig'.ts_ls.setup {
             require'lsp/vue'.vue_plugin,
         }
     },
-    filetypes = { 'typescript', 'javascript', 'vue' },
+    filetypes = { 'typescript', 'javascript', 'vue', 'typescriptreact' },
 }
