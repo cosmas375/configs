@@ -20,6 +20,9 @@ formatter.setup {
         typescriptreact = {
             require("formatter.filetypes.typescript").prettier,
         },
+        html = {
+            require("formatter.filetypes.html").prettier,
+        },
         c = {
             require("formatter.filetypes.c").clangformat,
         },
