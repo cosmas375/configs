@@ -12,7 +12,9 @@ local vue_plugin = {
   configNamespace = 'typescript',
 }
 
-require('lspconfig').vue_ls.setup {}
+vim.lsp.config.vue_ls = {}
+
+vim.lsp.enable({'vue_ls'})
 
 return {
     vue_plugin = vue_plugin

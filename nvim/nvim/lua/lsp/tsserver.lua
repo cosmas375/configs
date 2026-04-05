@@ -1,6 +1,6 @@
 -- npm install -g typescript typescript-language-server
 
-require'lspconfig'.ts_ls.setup {
+vim.lsp.config.ts_ls = {
     init_options = {
         plugins = {
             require'lsp/vue'.vue_plugin,
@@ -8,3 +8,5 @@ require'lspconfig'.ts_ls.setup {
     },
     filetypes = { 'typescript', 'javascript', 'vue', 'typescriptreact' },
 }
+
+vim.lsp.enable({'ts_ls'})
