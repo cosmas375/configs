@@ -1,3 +1,7 @@
 #!/bin/bash
 
-pacman -Qdtq | pacman -Rns -
+# remove unused dependencies
+pacman -Qdtq | pacman -Rns - || true
+
+# clear cache
+pacman -Scc
