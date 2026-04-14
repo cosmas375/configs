@@ -12,7 +12,13 @@ local vue_plugin = {
   configNamespace = 'typescript',
 }
 
-vim.lsp.config.vue_ls = {}
+-- Enable (broadcasting) snippet capability for completion
+local capabilities = vim.lsp.protocol.make_client_capabilities()
+capabilities.textDocument.completion.completionItem.snippetSupport = true
+
+vim.lsp.config.vue_ls = {
+    capabilities = capabilities,
+}
 
 vim.lsp.enable({'vue_ls'})
 
