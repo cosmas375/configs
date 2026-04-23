@@ -12,7 +12,7 @@ vim.opt.wildoptions = "fuzzy,pum"
 vim.keymap.set("n", "<C-p>", [[:find ]])
 
 -- grep
-vim.opt.grepprg = 'grep -rn'
+vim.opt.grepprg = 'grep -rn --exclude-dir=node_modules --exclude-dir=.next'
 vim.api.nvim_create_user_command(
   'Grep',
   function(opts)
