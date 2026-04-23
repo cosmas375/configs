@@ -35,10 +35,35 @@ formatter.setup {
     }
 }
 
-vim.keymap.set('n', '<leader>f', vim.cmd.Format)
+local group = "__formatter__"
 
-vim.api.nvim_create_augroup("__formatter__", { clear = true })
-vim.api.nvim_create_autocmd("BufWritePost", {
-	group = "__formatter__",
-	command = ":FormatWrite",
-})
+vim.api.nvim_create_augroup(group, { clear = true })
+
+local active = true
+local function enable_automatic_formatting()
+    vim.api.nvim_create_autocmd("BufWritePost", {
+        group = group,
+	    command = ":FormatWrite",
+    })
+
+    print("Formatting enabled")
+end
+local function disable_automatic_formatting()
+    vim.api.nvim_clear_autocmds({ group = group })
+
+    print("Formatting disabled")
+end
+local function toggle_autocmd()
+    if active then
+        disable_automatic_formatting()
+    else
+        enable_automatic_formatting()
+    end
+
+    active = not active
+end
+
+vim.keymap.set('n', '<leader>f', vim.cmd.Format)
+vim.keymap.set('n', '<leader>ft', toggle_autocmd)
+
+enable_automatic_formatting()
