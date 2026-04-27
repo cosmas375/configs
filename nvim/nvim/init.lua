@@ -6,6 +6,8 @@ require('explore')
 
 require('find')
 
+require('sed')
+
 -- plugins
 require('plugins')
 require('plugins/colorscheme')
