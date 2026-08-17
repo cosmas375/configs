@@ -18,3 +18,6 @@ vim.keymap.set("n", "<C-j>", "<C-e>")
 vim.keymap.set("n", "<C-k>", "<C-y>")
 
 vim.keymap.set("n", "<C-n>", [[:e %:h/]])
+
+-- copy to clipboard
+vim.keymap.set("v", "<C-Insert>", "\"+y")
